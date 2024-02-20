@@ -1,0 +1,48 @@
+<!-- filename: calculator.html
+author: Tamara Allos
+created: 20/02/2024
+last modified: 20/02/2024
+description: Simple Calculator app, learning JS  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+
+    <div id="calculator">
+        <input id="display" readonly>
+        <div id ="keys">
+            <button onclick="setDisplay('+')" class="operator-btn">+</button>
+            <button onclick="setDisplay('7')">7</button>
+            <button onclick="setDisplay('8')">8</button>
+            <button onclick="setDisplay('9')">9</button>
+            <button onclick="setDisplay('-')" class="operator-btn">-</button>
+            <button onclick="setDisplay('4')">4</button>
+            <button onclick="setDisplay('5')">5</button>
+            <button onclick="setDisplay('6')">6</button>
+            <button onclick="setDisplay('*')" class="operator-btn">*</button>
+            <button onclick="setDisplay('1')">1</button>
+            <button onclick="setDisplay('2')">2</button>
+            <button onclick="setDisplay('3')">3</button>
+            <button onclick="setDisplay('/')" class="operator-btn">/</button>
+            <button onclick="setDisplay('0')">0</button>
+            <button onclick="setDisplay('.')">.</button>
+            <button onclick="performCalculation()">=</button>
+            <button onclick="clearDisplay()" class="operator-btn">C</button>
+    
+        </div>
+
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+
+</html>
